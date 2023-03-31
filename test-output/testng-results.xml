@@ -1,0 +1,85 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<testng-results ignored="4" total="7" passed="3" failed="0" skipped="0">
+  <reporter-output>
+  </reporter-output>
+  <suite started-at="2023-03-30T10:06:28 EDT" name="Default suite" finished-at="2023-03-30T10:06:44 EDT" duration-ms="15844">
+    <groups>
+    </groups>
+    <test started-at="2023-03-30T10:06:28 EDT" name="Default test" finished-at="2023-03-30T10:06:44 EDT" duration-ms="15844">
+      <class name="com.selenium.qa.testcases.Login">
+        <test-method is-config="true" signature="setUp()[pri:0, instance:com.selenium.qa.testcases.Login@60099951]" started-at="2023-03-30T10:06:29 EDT" name="setUp" finished-at="2023-03-30T10:06:33 EDT" duration-ms="4687" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- setUp -->
+        <test-method signature="verifyLoginWithValidCredentials(java.lang.String,java.lang.String)[pri:1, instance:com.selenium.qa.testcases.Login@60099951]" started-at="2023-03-30T10:06:33 EDT" name="verifyLoginWithValidCredentials" data-provider="validLoginCredentials" finished-at="2023-03-30T10:06:34 EDT" duration-ms="990" status="PASS">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[amotooricap9@gmail.com]]>
+              </value>
+            </param>
+            <param index="1">
+              <value>
+                <![CDATA[12345]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- verifyLoginWithValidCredentials -->
+        <test-method is-config="true" signature="tearDown()[pri:0, instance:com.selenium.qa.testcases.Login@60099951]" started-at="2023-03-30T10:06:34 EDT" name="tearDown" finished-at="2023-03-30T10:06:35 EDT" duration-ms="186" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- tearDown -->
+        <test-method is-config="true" signature="setUp()[pri:0, instance:com.selenium.qa.testcases.Login@60099951]" started-at="2023-03-30T10:06:35 EDT" name="setUp" finished-at="2023-03-30T10:06:38 EDT" duration-ms="3484" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- setUp -->
+        <test-method signature="verifyLoginWithValidCredentials(java.lang.String,java.lang.String)[pri:1, instance:com.selenium.qa.testcases.Login@60099951]" started-at="2023-03-30T10:06:38 EDT" name="verifyLoginWithValidCredentials" data-provider="validLoginCredentials" finished-at="2023-03-30T10:06:39 EDT" duration-ms="969" status="PASS">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[amotooricap007@gmail.com]]>
+              </value>
+            </param>
+            <param index="1">
+              <value>
+                <![CDATA[12345]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- verifyLoginWithValidCredentials -->
+        <test-method is-config="true" signature="tearDown()[pri:0, instance:com.selenium.qa.testcases.Login@60099951]" started-at="2023-03-30T10:06:39 EDT" name="tearDown" finished-at="2023-03-30T10:06:39 EDT" duration-ms="179" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- tearDown -->
+        <test-method is-config="true" signature="setUp()[pri:0, instance:com.selenium.qa.testcases.Login@60099951]" started-at="2023-03-30T10:06:39 EDT" name="setUp" finished-at="2023-03-30T10:06:43 EDT" duration-ms="3414" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- setUp -->
+        <test-method signature="verifyLoginWithValidCredentials(java.lang.String,java.lang.String)[pri:1, instance:com.selenium.qa.testcases.Login@60099951]" started-at="2023-03-30T10:06:43 EDT" name="verifyLoginWithValidCredentials" data-provider="validLoginCredentials" finished-at="2023-03-30T10:06:44 EDT" duration-ms="971" status="PASS">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[amotooricap3@gmail.com]]>
+              </value>
+            </param>
+            <param index="1">
+              <value>
+                <![CDATA[12345]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- verifyLoginWithValidCredentials -->
+        <test-method is-config="true" signature="tearDown()[pri:0, instance:com.selenium.qa.testcases.Login@60099951]" started-at="2023-03-30T10:06:44 EDT" name="tearDown" finished-at="2023-03-30T10:06:44 EDT" duration-ms="197" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- tearDown -->
+      </class> <!-- com.selenium.qa.testcases.Login -->
+    </test> <!-- Default test -->
+  </suite> <!-- Default suite -->
+</testng-results>
