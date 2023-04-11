@@ -9,6 +9,9 @@ import org.testng.annotations.DataProvider;
 import org.testng.annotations.Test;
 
 import com.selenium.qa.base.Base;
+import com.selenium.qa.pages.AccountPage;
+import com.selenium.qa.pages.HomePage;
+import com.selenium.qa.pages.LoginPage;
 import com.selenium.qa.utils.Utils;
 
 public class Login extends Base {
@@ -23,8 +26,13 @@ public class Login extends Base {
 	public void setUp() {
 
 		driver = initializeBrowserAndOpenAppUrl(prop.getProperty("browserName"));
-		driver.findElement(By.xpath("//span[text()='My Account']")).click();
-		driver.findElement(By.linkText("Login")).click();
+		
+		HomePage homepage = new HomePage(driver);
+		homepage.clickOnMyAccount();
+//		driver.findElement(By.xpath("//span[text()='My Account']")).click();
+		
+		homepage.selectLoginOption();
+//		driver.findElement(By.linkText("Login")).click();
 	}
 
 	@AfterMethod
@@ -35,12 +43,21 @@ public class Login extends Base {
 	@Test(priority = 1, dataProvider="validLoginCredentials")
 	public void verifyLoginWithValidCredentials(String email, String password) {
 
-		driver.findElement(By.id("input-email")).sendKeys(email);
-		driver.findElement(By.id("input-password")).sendKeys(password);
-		driver.findElement(By.xpath("//input[@value='Login']")).click();
+		LoginPage loginpage = new LoginPage(driver);
+		loginpage.enterEmail(email);
+//		driver.findElement(By.id("input-email")).sendKeys(email);
+		
+		loginpage.enterPassword(password);
+//		driver.findElement(By.id("input-password")).sendKeys(password);
+		
+		loginpage.clickOnLoginButton();
+//		driver.findElement(By.xpath("//input[@value='Login']")).click();
 
-		Assert.assertTrue(driver.findElement(By.linkText("Edit your account information")).isDisplayed(),
+		AccountPage accountpage = new AccountPage(driver);
+		Assert.assertTrue(accountpage.displayStatusOfEditYourAcctInfoOption(),
 				"Edit your account information is NOT displayed");
+//		Assert.assertTrue(driver.findElement(By.linkText("Edit your account information")).isDisplayed(),
+//				"Edit your account information is NOT displayed");
 
 	}
 	
@@ -60,6 +77,7 @@ public class Login extends Base {
 		String actualWarningMsg = driver.findElement(By.xpath("//div[contains(@class,'alert-dismissible')]")).getText();
 		String expectedWarningMsg = dataProp.getProperty("EmailPasswordNotMatchingWarning");
 
+		
 		Assert.assertEquals(actualWarningMsg, expectedWarningMsg,"Email/Password not matching warning is NOT displayed");
 
 	}
