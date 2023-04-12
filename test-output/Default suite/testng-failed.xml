@@ -3,13 +3,13 @@
 <suite name="Failed suite [Default suite]" guice-stage="DEVELOPMENT">
   <test thread-count="5" name="Default test(failed)">
     <classes>
-      <class name="com.selenium.qa.testcases.Login">
+      <class name="com.selenium.qa.testcases.Search">
         <methods>
+          <include name="setup"/>
           <include name="tearDown"/>
-          <include name="setUp"/>
-          <include name="verifyLoginWithValidCredentials" invocation-numbers="1"/>
+          <include name="verifySearchWithoutAnyProduct"/>
         </methods>
-      </class> <!-- com.selenium.qa.testcases.Login -->
+      </class> <!-- com.selenium.qa.testcases.Search -->
     </classes>
   </test> <!-- Default test(failed) -->
 </suite> <!-- Failed suite [Default suite] -->

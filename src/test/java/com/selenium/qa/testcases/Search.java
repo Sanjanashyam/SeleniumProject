@@ -46,7 +46,7 @@ public Search() {
 				"Message for No product matches the search criteria is NOT displayed");
 	}
 
-	@Test(priority = 3)
+	@Test(priority = 3,dependsOnMethods= {"verifySearchWithInvalidProduct"})
 	public void verifySearchWithoutAnyProduct() {
 		driver.findElement(By.name("search")).sendKeys("");
 		driver.findElement(By.xpath("//div[@id='search']/descendant::button")).click(); // Path

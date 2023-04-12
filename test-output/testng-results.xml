@@ -1,17 +1,105 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<testng-results ignored="4" total="7" passed="3" failed="0" skipped="0">
+<testng-results ignored="0" total="13" passed="13" failed="0" skipped="0">
   <reporter-output>
   </reporter-output>
-  <suite started-at="2023-03-30T10:06:28 EDT" name="Default suite" finished-at="2023-03-30T10:06:44 EDT" duration-ms="15844">
+  <suite started-at="2023-04-12T13:42:25 EDT" name="SeleniumProject Automation Suite" finished-at="2023-04-12T13:43:35 EDT" duration-ms="70060">
     <groups>
     </groups>
-    <test started-at="2023-03-30T10:06:28 EDT" name="Default test" finished-at="2023-03-30T10:06:44 EDT" duration-ms="15844">
-      <class name="com.selenium.qa.testcases.Login">
-        <test-method is-config="true" signature="setUp()[pri:0, instance:com.selenium.qa.testcases.Login@60099951]" started-at="2023-03-30T10:06:29 EDT" name="setUp" finished-at="2023-03-30T10:06:33 EDT" duration-ms="4687" status="PASS">
+    <test started-at="2023-04-12T13:42:25 EDT" name="Selenium Tests" finished-at="2023-04-12T13:43:35 EDT" duration-ms="70060">
+      <class name="com.selenium.qa.testcases.Register">
+        <test-method is-config="true" signature="setUp()[pri:0, instance:com.selenium.qa.testcases.Register@71ba6d4e]" started-at="2023-04-12T13:42:25 EDT" name="setUp" finished-at="2023-04-12T13:42:31 EDT" duration-ms="5535" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- setUp -->
-        <test-method signature="verifyLoginWithValidCredentials(java.lang.String,java.lang.String)[pri:1, instance:com.selenium.qa.testcases.Login@60099951]" started-at="2023-03-30T10:06:33 EDT" name="verifyLoginWithValidCredentials" data-provider="validLoginCredentials" finished-at="2023-03-30T10:06:34 EDT" duration-ms="990" status="PASS">
+        <test-method signature="verifyRegisterAccountWithMandatoryFields()[pri:1, instance:com.selenium.qa.testcases.Register@71ba6d4e]" started-at="2023-04-12T13:42:31 EDT" name="verifyRegisterAccountWithMandatoryFields" finished-at="2023-04-12T13:42:32 EDT" duration-ms="1194" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- verifyRegisterAccountWithMandatoryFields -->
+        <test-method is-config="true" signature="tearDown()[pri:0, instance:com.selenium.qa.testcases.Register@71ba6d4e]" started-at="2023-04-12T13:42:32 EDT" name="tearDown" finished-at="2023-04-12T13:42:32 EDT" duration-ms="178" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- tearDown -->
+        <test-method is-config="true" signature="setUp()[pri:0, instance:com.selenium.qa.testcases.Register@71ba6d4e]" started-at="2023-04-12T13:42:32 EDT" name="setUp" finished-at="2023-04-12T13:42:37 EDT" duration-ms="4416" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- setUp -->
+        <test-method signature="verifyRegisterAccountWithAllFields()[pri:2, instance:com.selenium.qa.testcases.Register@71ba6d4e]" started-at="2023-04-12T13:42:37 EDT" name="verifyRegisterAccountWithAllFields" finished-at="2023-04-12T13:42:38 EDT" duration-ms="1264" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- verifyRegisterAccountWithAllFields -->
+        <test-method is-config="true" signature="tearDown()[pri:0, instance:com.selenium.qa.testcases.Register@71ba6d4e]" started-at="2023-04-12T13:42:38 EDT" name="tearDown" finished-at="2023-04-12T13:42:38 EDT" duration-ms="180" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- tearDown -->
+        <test-method is-config="true" signature="setUp()[pri:0, instance:com.selenium.qa.testcases.Register@71ba6d4e]" started-at="2023-04-12T13:42:38 EDT" name="setUp" finished-at="2023-04-12T13:42:43 EDT" duration-ms="4795" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- setUp -->
+        <test-method signature="verifyRegisterAccountWithExistingEmailAddress()[pri:3, instance:com.selenium.qa.testcases.Register@71ba6d4e]" started-at="2023-04-12T13:42:43 EDT" name="verifyRegisterAccountWithExistingEmailAddress" finished-at="2023-04-12T13:42:44 EDT" duration-ms="884" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- verifyRegisterAccountWithExistingEmailAddress -->
+        <test-method is-config="true" signature="tearDown()[pri:0, instance:com.selenium.qa.testcases.Register@71ba6d4e]" started-at="2023-04-12T13:42:44 EDT" name="tearDown" finished-at="2023-04-12T13:42:44 EDT" duration-ms="131" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- tearDown -->
+        <test-method is-config="true" signature="setUp()[pri:0, instance:com.selenium.qa.testcases.Register@71ba6d4e]" started-at="2023-04-12T13:42:44 EDT" name="setUp" finished-at="2023-04-12T13:42:48 EDT" duration-ms="4366" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- setUp -->
+        <test-method signature="verifyRegisterAccountWithNoDetails()[pri:4, instance:com.selenium.qa.testcases.Register@71ba6d4e]" started-at="2023-04-12T13:42:48 EDT" name="verifyRegisterAccountWithNoDetails" finished-at="2023-04-12T13:42:49 EDT" duration-ms="541" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- verifyRegisterAccountWithNoDetails -->
+        <test-method is-config="true" signature="tearDown()[pri:0, instance:com.selenium.qa.testcases.Register@71ba6d4e]" started-at="2023-04-12T13:42:49 EDT" name="tearDown" finished-at="2023-04-12T13:42:49 EDT" duration-ms="185" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- tearDown -->
+      </class> <!-- com.selenium.qa.testcases.Register -->
+      <class name="com.selenium.qa.testcases.Search">
+        <test-method is-config="true" signature="setup()[pri:0, instance:com.selenium.qa.testcases.Search@7161d8d1]" started-at="2023-04-12T13:43:22 EDT" name="setup" finished-at="2023-04-12T13:43:26 EDT" duration-ms="3620" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- setup -->
+        <test-method signature="verifySearchWithValidProduct()[pri:1, instance:com.selenium.qa.testcases.Search@7161d8d1]" started-at="2023-04-12T13:43:26 EDT" name="verifySearchWithValidProduct" finished-at="2023-04-12T13:43:27 EDT" duration-ms="715" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- verifySearchWithValidProduct -->
+        <test-method is-config="true" signature="tearDown()[pri:0, instance:com.selenium.qa.testcases.Search@7161d8d1]" started-at="2023-04-12T13:43:27 EDT" name="tearDown" finished-at="2023-04-12T13:43:27 EDT" duration-ms="191" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- tearDown -->
+        <test-method is-config="true" signature="setup()[pri:0, instance:com.selenium.qa.testcases.Search@7161d8d1]" started-at="2023-04-12T13:43:27 EDT" name="setup" finished-at="2023-04-12T13:43:30 EDT" duration-ms="3687" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- setup -->
+        <test-method signature="verifySearchWithInvalidProduct()[pri:2, instance:com.selenium.qa.testcases.Search@7161d8d1]" started-at="2023-04-12T13:43:30 EDT" name="verifySearchWithInvalidProduct" finished-at="2023-04-12T13:43:31 EDT" duration-ms="478" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- verifySearchWithInvalidProduct -->
+        <test-method is-config="true" signature="tearDown()[pri:0, instance:com.selenium.qa.testcases.Search@7161d8d1]" started-at="2023-04-12T13:43:31 EDT" name="tearDown" finished-at="2023-04-12T13:43:31 EDT" duration-ms="143" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- tearDown -->
+        <test-method is-config="true" signature="setup()[pri:0, instance:com.selenium.qa.testcases.Search@7161d8d1]" started-at="2023-04-12T13:43:31 EDT" name="setup" finished-at="2023-04-12T13:43:35 EDT" duration-ms="3615" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- setup -->
+        <test-method signature="verifySearchWithoutAnyProduct()[pri:3, instance:com.selenium.qa.testcases.Search@7161d8d1]" started-at="2023-04-12T13:43:35 EDT" name="verifySearchWithoutAnyProduct" finished-at="2023-04-12T13:43:35 EDT" duration-ms="519" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- verifySearchWithoutAnyProduct -->
+        <test-method is-config="true" signature="tearDown()[pri:0, instance:com.selenium.qa.testcases.Search@7161d8d1]" started-at="2023-04-12T13:43:35 EDT" name="tearDown" finished-at="2023-04-12T13:43:35 EDT" duration-ms="185" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- tearDown -->
+      </class> <!-- com.selenium.qa.testcases.Search -->
+      <class name="com.selenium.qa.testcases.Login">
+        <test-method is-config="true" signature="setUp()[pri:0, instance:com.selenium.qa.testcases.Login@74d1dc36]" started-at="2023-04-12T13:42:50 EDT" name="setUp" finished-at="2023-04-12T13:42:54 EDT" duration-ms="4081" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- setUp -->
+        <test-method signature="verifyLoginWithValidCredentials(java.lang.String,java.lang.String)[pri:1, instance:com.selenium.qa.testcases.Login@74d1dc36]" started-at="2023-04-12T13:42:54 EDT" name="verifyLoginWithValidCredentials" data-provider="validLoginCredentials" finished-at="2023-04-12T13:42:55 EDT" duration-ms="1187" status="PASS">
           <params>
             <param index="0">
               <value>
@@ -27,39 +115,15 @@
           <reporter-output>
           </reporter-output>
         </test-method> <!-- verifyLoginWithValidCredentials -->
-        <test-method is-config="true" signature="tearDown()[pri:0, instance:com.selenium.qa.testcases.Login@60099951]" started-at="2023-03-30T10:06:34 EDT" name="tearDown" finished-at="2023-03-30T10:06:35 EDT" duration-ms="186" status="PASS">
+        <test-method is-config="true" signature="tearDown()[pri:0, instance:com.selenium.qa.testcases.Login@74d1dc36]" started-at="2023-04-12T13:42:55 EDT" name="tearDown" finished-at="2023-04-12T13:42:55 EDT" duration-ms="174" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- tearDown -->
-        <test-method is-config="true" signature="setUp()[pri:0, instance:com.selenium.qa.testcases.Login@60099951]" started-at="2023-03-30T10:06:35 EDT" name="setUp" finished-at="2023-03-30T10:06:38 EDT" duration-ms="3484" status="PASS">
+        <test-method is-config="true" signature="setUp()[pri:0, instance:com.selenium.qa.testcases.Login@74d1dc36]" started-at="2023-04-12T13:42:55 EDT" name="setUp" finished-at="2023-04-12T13:42:59 EDT" duration-ms="3990" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- setUp -->
-        <test-method signature="verifyLoginWithValidCredentials(java.lang.String,java.lang.String)[pri:1, instance:com.selenium.qa.testcases.Login@60099951]" started-at="2023-03-30T10:06:38 EDT" name="verifyLoginWithValidCredentials" data-provider="validLoginCredentials" finished-at="2023-03-30T10:06:39 EDT" duration-ms="969" status="PASS">
-          <params>
-            <param index="0">
-              <value>
-                <![CDATA[amotooricap007@gmail.com]]>
-              </value>
-            </param>
-            <param index="1">
-              <value>
-                <![CDATA[12345]]>
-              </value>
-            </param>
-          </params>
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- verifyLoginWithValidCredentials -->
-        <test-method is-config="true" signature="tearDown()[pri:0, instance:com.selenium.qa.testcases.Login@60099951]" started-at="2023-03-30T10:06:39 EDT" name="tearDown" finished-at="2023-03-30T10:06:39 EDT" duration-ms="179" status="PASS">
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- tearDown -->
-        <test-method is-config="true" signature="setUp()[pri:0, instance:com.selenium.qa.testcases.Login@60099951]" started-at="2023-03-30T10:06:39 EDT" name="setUp" finished-at="2023-03-30T10:06:43 EDT" duration-ms="3414" status="PASS">
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- setUp -->
-        <test-method signature="verifyLoginWithValidCredentials(java.lang.String,java.lang.String)[pri:1, instance:com.selenium.qa.testcases.Login@60099951]" started-at="2023-03-30T10:06:43 EDT" name="verifyLoginWithValidCredentials" data-provider="validLoginCredentials" finished-at="2023-03-30T10:06:44 EDT" duration-ms="971" status="PASS">
+        <test-method signature="verifyLoginWithValidCredentials(java.lang.String,java.lang.String)[pri:1, instance:com.selenium.qa.testcases.Login@74d1dc36]" started-at="2023-04-12T13:42:59 EDT" name="verifyLoginWithValidCredentials" data-provider="validLoginCredentials" finished-at="2023-04-12T13:43:00 EDT" duration-ms="903" status="PASS">
           <params>
             <param index="0">
               <value>
@@ -75,11 +139,59 @@
           <reporter-output>
           </reporter-output>
         </test-method> <!-- verifyLoginWithValidCredentials -->
-        <test-method is-config="true" signature="tearDown()[pri:0, instance:com.selenium.qa.testcases.Login@60099951]" started-at="2023-03-30T10:06:44 EDT" name="tearDown" finished-at="2023-03-30T10:06:44 EDT" duration-ms="197" status="PASS">
+        <test-method is-config="true" signature="tearDown()[pri:0, instance:com.selenium.qa.testcases.Login@74d1dc36]" started-at="2023-04-12T13:43:00 EDT" name="tearDown" finished-at="2023-04-12T13:43:00 EDT" duration-ms="193" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- tearDown -->
+        <test-method is-config="true" signature="setUp()[pri:0, instance:com.selenium.qa.testcases.Login@74d1dc36]" started-at="2023-04-12T13:43:00 EDT" name="setUp" finished-at="2023-04-12T13:43:06 EDT" duration-ms="5706" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- setUp -->
+        <test-method signature="verifyLoginWithInvalidCredential()[pri:2, instance:com.selenium.qa.testcases.Login@74d1dc36]" started-at="2023-04-12T13:43:06 EDT" name="verifyLoginWithInvalidCredential" finished-at="2023-04-12T13:43:06 EDT" duration-ms="636" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- verifyLoginWithInvalidCredential -->
+        <test-method is-config="true" signature="tearDown()[pri:0, instance:com.selenium.qa.testcases.Login@74d1dc36]" started-at="2023-04-12T13:43:06 EDT" name="tearDown" finished-at="2023-04-12T13:43:07 EDT" duration-ms="145" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- tearDown -->
+        <test-method is-config="true" signature="setUp()[pri:0, instance:com.selenium.qa.testcases.Login@74d1dc36]" started-at="2023-04-12T13:43:07 EDT" name="setUp" finished-at="2023-04-12T13:43:11 EDT" duration-ms="4302" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- setUp -->
+        <test-method signature="verifyLoginWithInvalidEmailAndValidPwd()[pri:3, instance:com.selenium.qa.testcases.Login@74d1dc36]" started-at="2023-04-12T13:43:11 EDT" name="verifyLoginWithInvalidEmailAndValidPwd" finished-at="2023-04-12T13:43:12 EDT" duration-ms="590" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- verifyLoginWithInvalidEmailAndValidPwd -->
+        <test-method is-config="true" signature="tearDown()[pri:0, instance:com.selenium.qa.testcases.Login@74d1dc36]" started-at="2023-04-12T13:43:12 EDT" name="tearDown" finished-at="2023-04-12T13:43:12 EDT" duration-ms="157" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- tearDown -->
+        <test-method is-config="true" signature="setUp()[pri:0, instance:com.selenium.qa.testcases.Login@74d1dc36]" started-at="2023-04-12T13:43:12 EDT" name="setUp" finished-at="2023-04-12T13:43:17 EDT" duration-ms="5012" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- setUp -->
+        <test-method signature="verifyLoginWithValidEmailAndInvalidPwd()[pri:4, instance:com.selenium.qa.testcases.Login@74d1dc36]" started-at="2023-04-12T13:43:17 EDT" name="verifyLoginWithValidEmailAndInvalidPwd" finished-at="2023-04-12T13:43:17 EDT" duration-ms="577" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- verifyLoginWithValidEmailAndInvalidPwd -->
+        <test-method is-config="true" signature="tearDown()[pri:0, instance:com.selenium.qa.testcases.Login@74d1dc36]" started-at="2023-04-12T13:43:17 EDT" name="tearDown" finished-at="2023-04-12T13:43:17 EDT" duration-ms="154" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- tearDown -->
+        <test-method is-config="true" signature="setUp()[pri:0, instance:com.selenium.qa.testcases.Login@74d1dc36]" started-at="2023-04-12T13:43:17 EDT" name="setUp" finished-at="2023-04-12T13:43:22 EDT" duration-ms="4260" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- setUp -->
+        <test-method signature="verifyLoginWithNoCredentials()[pri:5, instance:com.selenium.qa.testcases.Login@74d1dc36]" started-at="2023-04-12T13:43:22 EDT" name="verifyLoginWithNoCredentials" finished-at="2023-04-12T13:43:22 EDT" duration-ms="406" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- verifyLoginWithNoCredentials -->
+        <test-method is-config="true" signature="tearDown()[pri:0, instance:com.selenium.qa.testcases.Login@74d1dc36]" started-at="2023-04-12T13:43:22 EDT" name="tearDown" finished-at="2023-04-12T13:43:22 EDT" duration-ms="159" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- tearDown -->
       </class> <!-- com.selenium.qa.testcases.Login -->
-    </test> <!-- Default test -->
-  </suite> <!-- Default suite -->
+    </test> <!-- Selenium Tests -->
+  </suite> <!-- SeleniumProject Automation Suite -->
 </testng-results>

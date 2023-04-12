@@ -1,6 +1,9 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <!DOCTYPE suite SYSTEM "https://testng.org/testng-1.0.dtd">
 <suite name="SeleniumProject Automation Suite">
+	<listeners>
+		<listener class-name="com.selenium.qa.listeners.MyListeners"/>
+	</listeners>
 	<test name="Selenium Tests">
 		<classes>
 			<class name="com.selenium.qa.testcases.Register" />

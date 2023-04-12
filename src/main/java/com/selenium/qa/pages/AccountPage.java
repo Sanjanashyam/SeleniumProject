@@ -14,7 +14,7 @@ public class AccountPage {
 	
 	 //Object
 	@FindBy(linkText="Edit your account information")
-	WebElement editAccountInfoPage;
+	private WebElement editAccountInfoPage;
 	
 // Actions
 	public boolean displayStatusOfEditYourAcctInfoOption() {
