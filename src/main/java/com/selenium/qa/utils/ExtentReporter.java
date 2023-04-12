@@ -18,6 +18,8 @@ public class ExtentReporter {
 		sparkReporter.config().setReportName("Selenium Test Automation Result Report");
 		sparkReporter.config().setDocumentTitle("Selenium Automation Report");
 		sparkReporter.config().setTimeStampFormat("MM/dd/yyyy hh:mm:ss");
+		
+		extentReport.attachReporter(sparkReporter);
 	}
 
 }
