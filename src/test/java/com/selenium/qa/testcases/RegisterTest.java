@@ -10,13 +10,13 @@ import org.testng.annotations.Test;
 import com.selenium.qa.base.Base;
 import com.selenium.qa.utils.Utils;
 
-public class Register extends Base {
+public class RegisterTest extends Base {
 	
-	public Register() {
+	public RegisterTest() {
 		super();
 	}
 
-	WebDriver driver;
+	public WebDriver driver; //making it public so it can be accessed in Listeners-fail/screenshot 
 
 	@BeforeMethod
 	public void setUp() {

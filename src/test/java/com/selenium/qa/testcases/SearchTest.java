@@ -9,13 +9,13 @@ import org.testng.annotations.Test;
 
 import com.selenium.qa.base.Base;
 
-public class Search extends Base {
+public class SearchTest extends Base {
 
-public Search() {
+	public SearchTest() {
 		super();
 	}
 
-	WebDriver driver;
+	public WebDriver driver; // making it public so it can be accessed in Listeners-fail/screenshot
 
 	@BeforeMethod
 	public void setup() {
@@ -46,7 +46,7 @@ public Search() {
 				"Message for No product matches the search criteria is NOT displayed");
 	}
 
-	@Test(priority = 3,dependsOnMethods= {"verifySearchWithInvalidProduct"})
+	@Test(priority = 3, dependsOnMethods = { "verifySearchWithInvalidProduct" })
 	public void verifySearchWithoutAnyProduct() {
 		driver.findElement(By.name("search")).sendKeys("");
 		driver.findElement(By.xpath("//div[@id='search']/descendant::button")).click(); // Path

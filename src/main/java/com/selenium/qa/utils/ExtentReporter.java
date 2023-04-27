@@ -8,7 +8,7 @@ import com.aventstack.extentreports.reporter.configuration.Theme;
 
 public class ExtentReporter {
 
-	public void GenerateExtentReport() {
+	public static ExtentReports generateExtentReport() {
 		ExtentReports extentReport = new ExtentReports();
 		
 		File extentReportFile = new File(System.getProperty("user.dir")+"\\test-output\\ExtentReports\\extentReport.html");
@@ -20,6 +20,7 @@ public class ExtentReporter {
 		sparkReporter.config().setTimeStampFormat("MM/dd/yyyy hh:mm:ss");
 		
 		extentReport.attachReporter(sparkReporter);
+		return extentReport;
 	}
 
 }

@@ -14,13 +14,13 @@ import com.selenium.qa.pages.HomePage;
 import com.selenium.qa.pages.LoginPage;
 import com.selenium.qa.utils.Utils;
 
-public class Login extends Base {
+public class LoginTest extends Base {
 	
-	public Login() {
+	public LoginTest() {
 		super();
 	}
 	
-	WebDriver driver;
+	public WebDriver driver; //making it public so it can be accessed in Listeners-fail/screenshot 
 
 	@BeforeMethod
 	public void setUp() {

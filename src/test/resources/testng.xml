@@ -6,9 +6,9 @@
 	</listeners>
 	<test name="Selenium Tests">
 		<classes>
-			<class name="com.selenium.qa.testcases.Register" />
-			<class name="com.selenium.qa.testcases.Login" />
-			<class name="com.selenium.qa.testcases.Search" />
+			<class name="com.selenium.qa.testcases.RegisterTest" />
+			<class name="com.selenium.qa.testcases.LoginTest" />
+			<class name="com.selenium.qa.testcases.SearchTest" />
 		</classes>
 	</test> <!-- Test -->
 </suite> <!-- Suite -->

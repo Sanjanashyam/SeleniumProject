@@ -6,6 +6,15 @@
   </listeners>
   <test thread-count="5" name="Selenium Tests(failed)">
     <classes>
+      <class name="com.selenium.qa.testcases.Search">
+        <methods>
+          <include name="verifySearchWithValidProduct"/>
+          <include name="verifySearchWithInvalidProduct"/>
+          <include name="setup"/>
+          <include name="verifySearchWithoutAnyProduct"/>
+          <include name="tearDown"/>
+        </methods>
+      </class> <!-- com.selenium.qa.testcases.Search -->
       <class name="com.selenium.qa.testcases.Login">
         <methods>
           <include name="tearDown"/>
@@ -17,14 +26,16 @@
           <include name="verifyLoginWithValidCredentials"/>
         </methods>
       </class> <!-- com.selenium.qa.testcases.Login -->
-      <class name="com.selenium.qa.testcases.Search">
+      <class name="com.selenium.qa.testcases.Register">
         <methods>
-          <include name="verifySearchWithInvalidProduct"/>
-          <include name="setup"/>
+          <include name="verifyRegisterAccountWithNoDetails"/>
+          <include name="verifyRegisterAccountWithExistingEmailAddress"/>
+          <include name="setUp"/>
+          <include name="verifyRegisterAccountWithAllFields"/>
           <include name="tearDown"/>
-          <include name="verifySearchWithoutAnyProduct"/>
+          <include name="verifyRegisterAccountWithMandatoryFields"/>
         </methods>
-      </class> <!-- com.selenium.qa.testcases.Search -->
+      </class> <!-- com.selenium.qa.testcases.Register -->
     </classes>
   </test> <!-- Selenium Tests(failed) -->
 </suite> <!-- Failed suite [SeleniumProject Automation Suite] -->
